@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tap Tap Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="score">
+          <div class="circle"></div>
+          <span id="score">0</span>
+        </div>
+      </div>
+      <div class="icons">
+        <a href="profile.html"
+          ><img src="images/profile.png" alt="User" id="userIcon"
+        /></a>
+        <a href="rocket.html"
+          ><img src="images/rocket.png" alt="Rocket" id="rocketIcon"
+        /></a>
+        <a href="coins.html"
+          ><img src="images/pot.png" alt="Coins" id="coinsIcon"
+        /></a>
+        <a href="wallet.html"
+          ><img src="images/wallet.png" alt="Wallet" id="walletIcon"
+        /></a>
+      </div>
+      <div class="coin" id="coin"></div>
+      <div class="progress-container">
+        <span id="remaining">100,000</span>
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

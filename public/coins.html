@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coins</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Streak</h1>
+      <p>Days Visited: <span id="visitStreak">0</span></p>
+      <p>Streak: <span id="visitStreak">0</span> days</p>
+      <a href="index.html" style="color: white; background-color: grey"
+        >Back to Game</a
+      >
+    </div>
+    <script>
+      document.getElementById("visitStreak").textContent =
+        localStorage.getItem("visitStreak") || 1;
+    </script>
+  </body>
+</html>

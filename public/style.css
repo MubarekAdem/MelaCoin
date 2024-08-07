@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+
+.score .circle {
+  width: 20px;
+  height: 20px;
+  background: orange;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 0;
+  background: #444;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.coin {
+  width: 150px;
+  height: 150px;
+  background: url("images/coin.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: filter 0.1s ease;
+}
+
+.coin:active {
+  filter: brightness(0.8);
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 20px 0;
+}
+
+#remaining {
+  margin-right: 10px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+#progress {
+  width: 100%;
+  height: 100%;
+  background: #4caf50;
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+/* Floating number animation */
+.floating-number {
+  position: absolute;
+  top: calc(50% - 20px); /* Adjust as needed */
+  left: calc(50% - 10px); /* Adjust as needed */
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 1;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
